@@ -38,10 +38,10 @@ DISABLE_AUTO_TITLE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git mvn node nvm npm yum)
 
+source $ZSH/oh-my-zsh.sh
+
 #Custom aliases
 alias gch='git log -n 1 --pretty=format:"%H" | pbcopy'
-
-source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 compctl -g '~/.teamocil/*(:t:r)' teamocil
