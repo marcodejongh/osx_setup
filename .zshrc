@@ -38,13 +38,12 @@ DISABLE_AUTO_TITLE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git mvn node nvm npm yum)
 
+#Custom aliases
+alias gch='git log -n 1 --pretty=format:"%H" | pbcopy'
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 compctl -g '~/.teamocil/*(:t:r)' teamocil
-
-# added by travis gem
-[ -f /Users/mojong/.travis/travis.sh ] && source /Users/mojong/.travis/travis.sh
 
 set -g default-terminal screen-256color
