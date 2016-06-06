@@ -14,3 +14,7 @@ brew cask install macdown
 
 wget https://raw.github.com/beardedspice/beardedspice/distr/publish/releases/BeardedSpice-latest.zip
 unzip BeardedSpice-latest.zip -d /Applications
+
+mkdir ~/Screenshots
+defaults write com.apple.screencapture location ~/Screenshots 
+killall SystemUIServer
