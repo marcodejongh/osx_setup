@@ -16,5 +16,10 @@ wget https://raw.github.com/beardedspice/beardedspice/distr/publish/releases/Bea
 unzip BeardedSpice-latest.zip -d /Applications
 
 mkdir ~/Screenshots
+
+# Change default dir for screenshots
 defaults write com.apple.screencapture location ~/Screenshots 
+
+# Change screenshot format to jpg
+defaults write com.apple.screencapture type jpg
 killall SystemUIServer
