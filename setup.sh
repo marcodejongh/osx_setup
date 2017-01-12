@@ -7,7 +7,7 @@ defaults write com.apple.dock static-only -bool TRUE
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Install brew packages
-brew install autoconf casperjs coreutils findutils gawk gdbm gettext git git-extras glib gmp gnu-indent gnu-sed gnu-tar gnutls grep hub libevent libffi libpng libssh2 libtasn1 maven midnight-commander mongodb ncdu nettle nmap node openssh openssl pcre phantomjs pkg-config reattach-to-user-namespace s-lang ssh-copy-id tmux wget xz zsh
+brew install autoconf casperjs coreutils findutils gawk gdbm gettext git git-extras glib gmp gnu-indent gnu-sed gnu-tar gnutls grep hub libevent libffi libpng libssh2 libtasn1 maven midnight-commander mongodb ncdu nettle nmap node openssh openssl pcre phantomjs pkg-config reattach-to-user-namespace s-lang ssh-copy-id tmux wget xz zsh diff-so-fancy
 
 gem install travis
 brew cask install macdown
@@ -53,3 +53,6 @@ echo "Prevent Time Machine from prompting to use new hard drives as backup volum
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 killall SystemUIServer
+
+# Git config changes
+git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
