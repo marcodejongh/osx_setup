@@ -14,4 +14,5 @@ fi
 pmodload 'helper'
 
 # Source module files.
+source "${0:h}/git.zsh"
 source "${0:h}/alias.zsh"
