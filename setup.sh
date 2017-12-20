@@ -8,6 +8,9 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 # Install brew packages
 brew update
+brew install mas
+mas signin
+
 brew cask install java java6 java7 jce-unlimited-strength-policy macdown vagrant 
 brew install aalib ack adns atk atlassian-plugin-sdk autoconf automake babl cairo cctools chromedriver clojure cmake coreutils cowsay curl d-bus dbusaalib ack adns atk atlassian-plugin-sdk autoconf automake babl cairo casperjs cctools chromedriver clojure cmake coreutils cowsay curl d-bus dbus diff-so-fancy dirmngr docker docker-machine ffmpeg findutils fontconfig fortune freetype gawk gd gdbm gdk-pixbuf gettext gifsicle git git-extras glib gmp gnu-indent gnu-sed gnu-tar gnupg gnupg2 gnutls gobject-introspection gpg-agent gradle graphite2 gsettings-desktop-schemas gtk+ gtk+3 gtk-mac-integration harfbuzz hicolor-icon-theme hub icu4c jenv jpeg jruby laas-cli lame leiningen libassuan libcroco libepoxy libevent libffi libgcrypt libgpg-error libksba libpng librsvg libssh2 libtasn1 libtiff libtool libunistring libusb libusb-compat libwmf libyaml lynx maven midnight-commander mongodb mpfr mvnvm ncdu nettle nmap node npth nvm nyancat openssl openssl@1.1 p11-kit pango pcre perl phantomjs pinentry pixman pkg-config postgresql pth py2cairo pygobject pygtk python python3 readline reattach-to-user-namespace rlwrap ruby rustup-init s-lang shared-mime-info shellcheck sl sqlite ssh-copy-id tmux tomcat utf8proc vim webp wget wifi-password x264 xvid xz zsh zsh-history-substring-search  python3 readline reattach-to-user-namespace rlwrap ruby rustup-init s-lang shared-mime-info shellcheck sl sqlite ssh-copy-id tmux tomcat utf8proc vim webp wget wifi-password x264 xvid xz zsh zsh-history-substring-search 
 
