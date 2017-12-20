@@ -1,1 +1,0 @@
-marcos.zsh-theme
